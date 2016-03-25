@@ -1,0 +1,3 @@
+cd /home/sford/gitRepos/pythonPractice/pythonPractice/src
+wget ftp://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt
+wget ftp://ftp.nasdaqtrader.com/SymbolDirectory/otherlisted.txt
