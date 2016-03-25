@@ -1,4 +1,7 @@
 from yahoo_finance import Share
-yahoo = Share('YHOO')
 
-print yahoo.get_open()
+stockSymbol = 'YHOO'
+
+print('Retrieving opening price for: ' + stockSymbol);
+stockData = Share(stockSymbol)
+print stockData.get_open()
