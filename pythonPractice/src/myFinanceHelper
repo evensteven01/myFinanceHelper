@@ -1,7 +1,7 @@
-from yahoo_finance import Share
+from googlefinance import getQuotes
+import json
 
 stockSymbol = 'YHOO'
 
 print('Downloading opening price for: ' + stockSymbol);
-stockData = Share(stockSymbol)
-print stockData.get_open()
+print json.dumps(getQuotes(stockSymbol), indent=2)
