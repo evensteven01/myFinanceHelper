@@ -1,10 +1,10 @@
 from yahoo_finance import Share
 
-stockSymbolList = []
+stockSymbolList = {}
 yahooSymbol = 'YHOO'
 qcomSymbol = 'QCOM'
-stockSymbolList.append(yahooSymbol)
-stockSymbolList.append(qcomSymbol)
+stockSymbolList[yahooSymbol] = None
+stockSymbolList[qcomSymbol] = None
 
 for stockSymbol in stockSymbolList:
     print('Downloading opening price for: ' + stockSymbol);
