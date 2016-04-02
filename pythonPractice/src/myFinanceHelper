@@ -1,7 +1,12 @@
 from yahoo_finance import Share
 
-stockSymbol = 'YHOO'
+stockSymbolList = []
+yahooSymbol = 'YHOO'
+qcomSymbol = 'QCOM'
+stockSymbolList.append(yahooSymbol)
+stockSymbolList.append(qcomSymbol)
 
-print('Downloading opening price for: ' + stockSymbol);
-stockData = Share(stockSymbol)
-print stockData.get_open()
+for stockSymbol in stockSymbolList:
+    print('Downloading opening price for: ' + stockSymbol);
+    stockData = Share(stockSymbol)
+    print stockData.get_open()
